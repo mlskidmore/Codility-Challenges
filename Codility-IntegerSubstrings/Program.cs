@@ -31,7 +31,12 @@ namespace Codility_IntegerSubstrings
 
         public static int solution(int A, int B)
         {
-             return Convert.ToString(B).IndexOf(Convert.ToString(A));
+            int position = Convert.ToString(B).IndexOf(Convert.ToString(A));
+
+            if (position >= 0)
+                return Convert.ToString(B).IndexOf(Convert.ToString(A));
+            else
+                return -1;
         }
     }
 }
